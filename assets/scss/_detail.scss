@@ -1,0 +1,33 @@
+.place-detail {
+    max-width: 600px;
+    margin: 50px auto;
+    text-align: center;
+
+
+    @media all and (max-width: $md) {
+        margin: 50px 40px;
+    }
+
+    @media all and (max-width: $sm) {
+        margin: 30px 20px;  
+    }
+
+    &__title {
+        font-size: 64px;
+    }
+
+    &__subtitle {
+        margin: 20px 0 40px;
+        font-size: 30px;
+
+        @media all and (max-width: $sm) {
+            font-size: 24px;
+        }
+    }
+
+    &__info {
+        font-size: 15px;
+        line-height: 24px;
+    }
+
+}

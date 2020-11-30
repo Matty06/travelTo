@@ -1,0 +1,26 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 0 80px;
+
+    &__logo {
+        a {
+            font-size: 36px;
+            color: $primary-color;
+            text-decoration: none;
+        }
+    }
+
+    &__socials {
+        display: flex;
+
+        li {
+            margin-right: 28px;
+        }
+
+        li:last-child {
+            margin-right: 0;
+        }
+    }
+}

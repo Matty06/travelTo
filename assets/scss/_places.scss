@@ -1,0 +1,57 @@
+.places {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+
+    @media all and (max-width: $lg) {
+        flex-direction: column;
+    }
+
+    .place {
+        box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+
+        @media all and (max-width: $lg) {
+            width: 65%;
+            margin: 20px auto;
+        }
+
+        @media all and (max-width: $md) {
+            width: 85%;
+        }
+
+        &__image {
+            width: 300px;
+            min-height: 200px;
+
+            @media all and (max-width: $lg) {
+                width: 100%;
+                min-height: auto;
+            }
+
+        }
+
+        &__description {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: -4px;
+            padding: 15px 17px;
+            background-color: $primary-color;
+
+            h3 {
+                font-size: 16px;
+                color: $secondary-color;
+                text-transform: uppercase;
+            }
+
+            a {
+                font-size: 11px;
+                color: $secondary-color;
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
